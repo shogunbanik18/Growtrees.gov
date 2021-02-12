@@ -1,0 +1,271 @@
+@media screen and (max-width: 720px)
+{
+    header{
+        /* background-image: url("mobbg.png"); */
+         width: 375px; 
+        height: 800px;
+    }
+    img#tree{
+        /* width: 375px; */
+        width: 100%;
+        height: 375px;
+        margin-left: -28px;
+        margin-top: -28px;
+    }
+
+    /* Stling the paragraph */
+    #para1{
+    font-family: 'Montserrat', sans-serif;
+
+        font-weight: 600;
+    }
+
+    /* STYLING THE LOGO IMG  */
+#logo{
+    margin-left:25px;
+    margin-top: 30px;
+    width: 270px;
+    
+}
+
+/* FOR HAMBURGER MENU ICON FUNCTONALITY  */
+
+    /* STYLING THE BUTTON PART  */
+nav .right ul li button#plant{
+    display: none;
+    position: absolute;
+    color: var(--primary);
+    text-decoration: none;
+    background-color: var(--green);
+    border:4px solid var(--green);
+    border-radius: 64px 0px 64px 64px;
+    padding: 15px 25px;
+    margin-top: 0px;
+    margin-left:228px ;
+    cursor: pointer; 
+    /* ADDING A TRANSITION EFFECT  */
+    transition: all 0.5s ease;
+}
+
+ul li.list{
+    margin-top: -29px;
+    margin-left: 751px;
+
+    display: none;
+    list-style: none; 
+}
+
+            /* FOR HAMBURGER ICON  */
+/* TARGETTING THE SITE-MAIN WRAPPER INSIDE THE BODY PART  */
+.site-main-wrapper{
+    position:relative;
+}
+/* TARGETTING THE HAMBERGER MENU*/
+.hamberger{
+    display: flex;
+    position: absolute;
+    top:40px ;
+    right: 30px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/* TARGETTING THE HAMBERGER IMAGE  */
+.hamberger img{
+    width: 35px;
+    margin-top:-2px ;
+    margin-right: -17px;
+}
+
+/* TARGETTING THE MOBILE NAVIGATION OFG THE SIDE SCREEN  */
+.mobile-nav{
+    display: flex;
+    /* clip-path: circle(52); */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1001;
+    background: rgb(8, 48, 15);
+    width: 375px;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    /* ADDING A TRANSFORM PROPERTY TO THE MOBILE NAV  */
+    transform: translateX(100%);
+    /* -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%); */
+    transition: all 0.7s ease;
+    /* clip-path: circle(50%); */
+}
+
+.open{
+    /* ADDING A TRANSFORM PROPERTY TO THE MOBILE NAV  */
+    /* clip-path: circle(20px ); */
+    transform: translateX(20%);
+    transition: all 0.5s ease-in-out;
+
+    /* -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0); */
+}
+/* TARGETTING THE CLOSE BUTTON  */
+.No{
+    position: fixed;
+    top: 36px;
+    right: 166px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+/* TARGETTING THE CLOSE BUTTON IMG  */
+.No img{
+    width: 20px;
+    filter: invert(100%);
+}
+
+/* mobile navigation None */
+
+/* TARGETTING THE LIST  */
+
+.mobile-nav ul{
+    list-style: none;
+}
+
+.mobile-nav ul hr#linebreak{
+    /* list-style: none; */
+    color: red;
+}
+
+.mobile-nav ul li{
+    /* list-style: none; */
+    padding: 10px;
+}
+
+ 
+/* STYLING THE INDAIN INITIATIVE TEXT  */
+h4#indian{
+    font-size: 1.1rem;
+    margin-left: 20px;
+    /* padding: 20px; */
+    color: var(--green);
+    position: absolute;
+    margin-top: 150px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+span#orange{
+    /* padding-top: 10px; */
+    color: orange;
+}
+span#white{
+    color: white;
+}
+
+.mobile-nav ul li a{
+    margin-left: 30px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.mobile-nav ul li a:hover{
+    color: var(--green);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    
+}
+
+/* STYLING THE PLANT BUTTON  */
+button#plant1{
+    margin-left: -312px;
+    margin-top: 579px;
+}
+
+#menui{
+    position: absolute;
+    width: 200px;
+    margin-top: -45px;
+    margin-left: -16px;
+    /* height: 200px; */
+}
+
+
+/* TRGETTING THE PREV ICON  */
+.midcontainer #prev{
+    display: none;
+    position:absolute;
+    margin-top: 250px;
+    margin-left: 77px;
+    width: 80px;
+    height: 80px;
+}
+
+/* TARGETTING THE NEXT ICON */
+.midcontainer #next{
+    display: none;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 200px;
+    width: 80px;
+    height: 80px;
+}
+
+
+/* Targetting the para  */
+p#para1 {
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    width: 300px;
+    margin-top: -157px;
+    margin-left: 25px;
+    background: none;
+    /* background: linear-gradient(rgba(17, 83, 0, 0.774),rgba(17, 83, 0, 0.192)); */
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+
+/* SOCIAL MEDIA ICON  */
+#social {
+    /* background: linear-gradient(green,green); */
+    margin-top: 318px;
+    margin-left: 106px;
+    position: absolute;
+    padding-bottom: 20px;
+}
+/*  STYLING THE FOOTER SECTION  */ 
+#footer{
+    width: 344px;
+    background: var(--darkgreen);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 15px ;
+    font-size: 14px;
+}
+
+/* STYLING THE VIDEO PART  */
+#video{
+    position: absolute;
+    margin-top: -102px;
+    /* margin-right: 20px; */
+    margin-left:35px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+}

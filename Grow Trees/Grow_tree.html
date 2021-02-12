@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ADDING A SUITABLE TITLE  -->
+    <title>GrowTree.gov</title>
+
+    <!-- LINK FOR EXTERNAL CSS  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FOR RESPONSIVE  -->
+    <link rel="stylesheet" href="phone.CSS">
+
+    <!-- LINK FOR EXTERNAL JAVASCRIPT  -->
+    <!-- <script src="script.js"></script> -->
+    <!-- WRONG PRACTICE  -->
+    <link rel="javascript" href="script.js">
+
+    <!-- LINK FOR FONTS  -->
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="site-main-wrapper">
+        <button class="hamberger">
+            <img src="menu icon.png" alt="Hamburger">
+        </button>
+
+        <div class="mobile-nav">
+            <img id="menui" src="logo.png" alt="GrowTrees">
+            <h4 id="indian"> A INITIATIVE BY <br><span id="orange">INDIAN</span> <span id="white">GOVER</span>NMENT</h4>
+            <button class="No">
+                <img src="No.png" alt="No">
+            </button>
+            <ul>
+                <li><a class="mainlink" href="#">MAIN</a></li>
+                <!-- <hr id="linebrerak"> -->
+                <li><a  class="mainlink" href="#">INFO</a></li>
+                <!-- <hr class="linebrerak"> -->
+                <li><a  class="mainlink" href="#">CONTACT US</a></li>
+                <!-- <hr> -->
+            </ul>
+        </div>
+
+        <!-- START OF HEADER PART  -->
+        <header>
+            <div class="container">
+                <!-- ADDING A NAVBAR  -->
+                <nav>
+                    <!-- DIVIDING THE NAVBAR INTO TWO PARTS  -->
+                    <!-- LEFT PART  -->
+                    <div class="left">
+                        <!-- ADDING THE LOGO  -->
+                        <img id="logo" src="logo.png" alt="GrowTree">
+                    </div>
+                    <!-- RIGHT PART  -->
+                    <div class="right">
+                        <ul id="ul">
+                            <li class="list " id="list1">
+                                <a href="#">MAIN</a>
+
+                            </li>
+                            <li class="list " id="list2">
+                                <a href="#">INFO</a>
+
+                            </li>
+                            <li class="list " id="list3">
+                                <a href="#">CONTACT US</a>
+
+                            </li>
+                            <li>
+                                <button id="plant">
+                                    PLANT NOW
+                                </button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+
+            <!-- ADDING A MID-CONTAINER  -->
+            <div class="midcontainer">
+                <!-- ADDING A LEFT BUTTON FOR WEB -->
+                <div class="leftbtn">
+                    <img src="prev.png" alt="PREV" id="prev">
+                </div>
+
+                <!-- ADDING A MID IMG -->
+                <div class="mid">
+                    <img id="tree" src="tree.png" alt="Tree">
+
+                    <p id="para1">As an environmental charity, we’re on a mission to make it simple for everyone to help
+                        the
+                        environment by planting each one tree!</p>
+                    <button id="plant1">PLANT A TREE NOW</button>
+
+                </div>
+
+                <!-- ADDING A RIGHT BUTTON FOR WEB -->
+                <div class="rightbtn">
+                    <img src="next.png" alt="Next" id="next">
+                </div>
+            </div>
+
+            <!-- END SECTION OF HEADER PART  -->
+            <div class="endpart">
+                <div class="social">
+                    <img id="social" src="social.png" alt="Social media">
+                </div>
+                <div class="video">
+                    <!-- <audio controls>
+                        <source src="music.mp3" type="audio/mpeg">
+                    </audio> -->
+
+                    <video controls  id="video">
+                        <!-- <source src="intro.mp4" type="video/mp4"> -->
+                        <source src="video2.mp4" type="video/mp4">
+                    </video>
+                    <!-- <source> -->
+                    <!-- <video id="video" src="intro.mp4">Intro</video> -->
+                    <!-- </source> -->
+                </div>
+            </div>
+
+
+
+
+        </header>
+        <!-- END OF HEADER SECTION  -->
+
+        <footer id="footer">
+            copyright &copy;GrowTree.com.All Rights Reserved
+            <div id="footer1">
+                A INITIATIVE BY INDIAN GOVERNMENT
+            </div>
+        </footer>
+    </div>
+
+    <!-- INTERNAL JAVASCRIPT LINKED AS EXTERNAL IS NOT WORKING PROPERLY   -->
+    <script>
+
+        let hamberger = document.querySelector('.hamberger');
+        let No = document.querySelector('.No');
+        let mobileNav = document.querySelector('.mobile-nav')
+
+        hamberger.addEventListener('click', function () {
+            mobileNav.classList.add('open');
+        });
+
+        No.addEventListener('click', function () {
+            mobileNav.classList.remove('open');
+        });
+
+    </script>
+</body>
+
+</html>
